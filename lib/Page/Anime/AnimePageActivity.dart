@@ -12,6 +12,7 @@ class animePageActivity extends StatefulWidget{
 
 class _animePageActivityState extends State<animePageActivity> {
   late List<AllAnimeModel> dataList;
+  late List<AllAnimeModel> data111;
   @override
   void initState() {
     callAnimeApi();
@@ -53,7 +54,7 @@ class _animePageActivityState extends State<animePageActivity> {
                           ),
                           SizedBox(height: 10,),
                           Expanded(child: Text(setmodel.canonicalTitle,textAlign: TextAlign.center,style: TextStyle(
-                            fontSize: 12
+                            fontSize: 10
                           ),)),
                           SizedBox(height: 5,),
                         ],
@@ -88,8 +89,6 @@ class _animePageActivityState extends State<animePageActivity> {
         }
       });
     }
-
     return dataList;
-
   }
 }
